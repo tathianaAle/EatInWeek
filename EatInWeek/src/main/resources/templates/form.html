@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="https//thymeleaf.org">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+	rel="stylesheet">
+</head>
+
+<body>
+<header th:insert="fragments/header :: barra"> </header>
+	<div class="py-5 text-center"
+		style="  background-image: url(../decoracion/fondo.jpeg); background-position: top left; background-size: 100%; background-repeat: repeat;">
+		<div class="container" style="display: flex;justify-content: center;  align-items: center;">
+			<div class="row"
+				style="border-radius: 10px;;background-image: url(../decoracion/fondoPlatos.jpeg); width:700px; background-position: top left; background-repeat: repeat;">
+				<div class="mx-auto col-lg-6 col-10" >
+					<h1 contenteditable="true">Registro</h1>
+					<p class="mb-3">Para poder acceder a todos los beneficios de
+						eat week porfavor diligenciar correctamente el siguiente
+						formulario</p>
+					<form class="text-left" style="padding-bottom:20px;">
+						<div class="form-group" style="height: 10%;">
+							<label for="form16">Identificacion</label> <input type="text"
+								class="form-control" id="form16" placeholder="CC/CE">
+						</div>
+						<div class="form-group" style="height: 10%;">
+							<label for="form16">Nombre Completo</label> <input type="text"
+								class="form-control" id="form16" placeholder="nombre">
+						</div>
+						<div class="form-group">
+							<label for="form17">Telefono/Celular</label> <input type="text"
+								class="form-control" id="form17" placeholder="# de celular">
+						</div>
+						<div class="form-group">
+							<label for="form18">Correo Electronico</label> <input
+								type="email" class="form-control" id="form18"
+								placeholder="ejemplo@ejemplo.com">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="form19">Contraseña</label> <input type="password"
+									class="form-control" id="form19" placeholder="••••">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="form20">Confirmar Contraseña</label> <input
+									type="password" class="form-control" id="form20"
+									placeholder="••••">
+							</div>
+						</div>
+						<!-- <div class="form-group">
+              <div class="form-check"> <input class="form-check-input" type="checkbox" id="form21" value="on"> <label class="form-check-label" for="form21">Estoy de a cuerdo con los<u> terminos y condiciones</u> del servicio</label> </div>
+            </div>
+             -->
+						<button type="submit" class="btn btn-primary">Registrarse</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!-- <pingendo onclick="window.open('https://pingendo.com/', '_blank')"
+		style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made
+	with Pingendo Free&nbsp;&nbsp;<img
+		src="https://pingendo.com/site-assets/Pingendo_logo_big.png"
+		class="d-block" alt="Pingendo logo" height="16"></pingendo> -->
+		<footer th:insert="fragments/footer :: pie" class="footer">
+ 
+ </footer>
+</body>
+
+</html>

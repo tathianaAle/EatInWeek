@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https//thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+	rel="stylesheet">
+</head>
+<body>
+<header th:insert="fragments/header :: barra"> </header>
+<h1>Hola soy los colaboradores</h1>
+
+<footer th:insert="fragments/footer :: pie" class="footer">
+ 
+ </footer>
+ 
+ <script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
